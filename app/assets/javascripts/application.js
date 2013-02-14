@@ -13,3 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= jquery.cslider
+//= modernizr.custom
+
+$(function() {
+  $('#da-slider').cslider({
+    autoplay    : true, // auto play slider on load
+    bgincrement : 450
+  });
+
+});
