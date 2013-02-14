@@ -27,7 +27,7 @@ end
 
 gem 'jquery-rails'
 gem 'heroku'
-gem 'mysql2psql'
+#gem 'mysql2psql'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
