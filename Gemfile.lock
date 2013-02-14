@@ -129,6 +129,7 @@ DEPENDENCIES
   heroku
   jquery-rails
   mysql2psql
+  pg
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)
   sqlite3
