@@ -3,8 +3,15 @@
     <section class="top-logo"> <a href="#"><%= image_tag("logo.jpg") %></a></section>
     <section class="top-right1">
       <section class="top-inside1">
-        <section class="btn2"> <a href="#">Register</a> </section>
-        <section class="btn1"> <a href="#"> Login</a> </section>
+        
+        <% if user_signed_in? %>
+        <%= current_user.email %>
+        <section class="btn2"><%= link_to 'sign out', destroy_user_session_path, :method => :delete %></section>
+        <% else%>
+        <section class="btn2"> <%= link_to "Register", new_user_registration_path %> </section>
+        <section class="btn1"> <a href="/users/sign_in"> Login</a> </section>
+        <% end %>
+        
         <section class="flag"> <a href="#"> <%= image_tag("flag.jpg") %></a> </section>
         <section class="flag"> <a href="#"> <%= image_tag("lag2.jpg") %></a> </section>
       </section>
