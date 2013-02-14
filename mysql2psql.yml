@@ -1,20 +1,37 @@
+#mysql:
+# hostname: localhost
+# port: 3306
+# socket: /tmp/mysql.sock
+# username: mysql2psql
+# password:
+# database: mysql2psql_test
+#
+#destination:
+# # if file is given, output goes to file, else postgres
+# file:
+# postgres:
+#  hostname: localhost
+#  port: 5432
+#  username: mysql2psql
+#  password:
+#  database: mysql2psql_test
+
 mysql:
  hostname: localhost
  port: 3306
- socket: /tmp/mysql.sock
- username: mysql2psql
+ socket: /var/run/mysqld/mysqld.sock
+ username: root
  password: 
- database: mysql2psql_test
+ database: mobbynet_development
 
 destination:
- # if file is given, output goes to file, else postgres
- file: 
  postgres:
   hostname: localhost
   port: 5432
-  username: mysql2psql
-  password: 
-  database: mysql2psql_test
+  username: root
+  password:
+  database: pg-db
+
 
 # if tables is given, only the listed tables will be converted.  leave empty to convert all tables.
 #tables:
