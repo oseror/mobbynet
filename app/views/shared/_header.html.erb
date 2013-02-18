@@ -1,36 +1,47 @@
-<section id="wrapper">
-  <section id="top">
-    <section class="top-logo"> <a href="#"><%= image_tag("logo.jpg") %></a></section>
-    <section class="top-right1">
-      <section class="top-inside1">
-        
-        <% if user_signed_in? %>
-        <%= current_user.email %>
-        <section class="btn2"><%= link_to 'sign out', destroy_user_session_path, :method => :delete %></section>
-        <% else%>
-        <section class="btn2"> <%= link_to "Register", new_user_registration_path %> </section>
-        <section class="btn1"> <a href="/users/sign_in"> Login</a> </section>
-        <% end %>
-        
-        <section class="flag"> <a href="#"> <%= image_tag("flag.jpg") %></a> </section>
-        <section class="flag"> <a href="#"> <%= image_tag("lag2.jpg") %></a> </section>
-      </section>
-      <section class="top-inside2">
-        <section id="navi">
-          <ul>
-            <li> <a href="">Home</a></li>
-            <li> <a href="">People</a></li>
-            <li> <a href="">Places </a></li>
-            <li> <a href="">Events</a></li>
-            <li> <a href="">Deals</a></li>
-            <li> <a href="">Shouts</a></li>
-            <li> <a href="">Shops</a></li>
-            <li> <a href="">Conatct Us </a></li>
-          </ul>
-        </section>
-      </section>
+<section id="hedder">
+
+        <section class="logo"><a href="#"><img src="/assets/logo.jpg"  alt="" /></a></section>
+ <% if !user_signed_in? %>
+        <section class="regester">
+       	  <p class="regester-text"><a href="<%= new_user_registration_path %>">Register</a></p>
     </section>
-  </section>
-</section>
+
+        <section class="login-bg">
+       	  <p class="login"><a href="/users/sign_in">Login</a></p>
+        </section>
+        <% else%>
+        <p><%= current_user.username %></p>
+        <section class="regester">
+       	  <p class="regester-text"><%= link_to 'sign out', destroy_user_session_path, :method => :delete %></p>
+    </section>
+        <% end %>
+         <%# if user_signed_in? %>
+        <%#= current_user.username %>
+          <%#*<section class="regester"><p class="regester-text"><%= link_to 'sign out', destroy_user_session_path, :method => :delete %></p></section>
+        <%# else%>
+        <%#*<section class="logo"> <a href="/users/sign_in"><img src="/assets/logo.jpg"  alt="" /></a> </section>%>
+        <%#*<section class="regester"><p class="regester-text"> <%= link_to "Register", new_user_registration_path %></p> </section>
+        <%# end %>
+        <section class="flag-icon"><a href="#"><img src="/assets/flag.jpg" alt="" /></a></section>
+        <section class="flag2"><a href="#"><img src="/assets/lag2.jpg" alt="" /></a></section>
+
+        <nav class="navber">
+
+         <ul class="hedder-nav">
+    				   <li> <a href=""> Home </a></li>
+    				   <li> <a href="">People</a></li>
+      				   <li> <a href="">Places </a></li>
+     				   <li> <a href="">Events</a></li>
+     				   <li> <a href="">Deals</a></li>
+    				   <li> <a href="">Shouts</a></li>
+    				   <li> <a href="">Shops</a></li>
+   					   <li> <a href="">Conatct Us </a></li>
+     				 </ul>
+
+
+        </nav>
+
+
+  <!--  hedder--></section>
 
 

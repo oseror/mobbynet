@@ -1,0 +1,601 @@
+*{
+	margin:0 auto;
+	padding:0;
+}
+
+p h3 h2 h1 h5 h4 h3 span { font-family:Arial, Helvetica, sans-serif;}
+
+
+#wapper{
+	width:100%;
+	margin:0 auto;
+	padding:0;
+
+
+}
+#serchber{
+	width:100%;
+	margin:0 auto;
+	padding:0;
+	background:#333333;
+	height:43px;
+	float:left;
+	margin-top:10px;
+
+	top:0;
+}
+#hedder{
+	width:960px;
+	margin:0 auto;
+	padding:0;
+}
+#body{
+	margin:0 auto;
+	padding:0;
+	width:960px;
+	background:#E7EBF2;
+
+
+}
+.bodywapper{
+	width:100%;
+	background:#E7EBF2;
+	height:500px;
+	height:900px;
+	float:left;
+	margin:0 auto;
+}
+#footer{
+
+	width:960px;
+	height:80px;
+	margin:0 auto;
+	padding:0;
+	float:left;
+	margin-top:50px;
+	background:url(/assets/footernav-bg.png) no-repeat;
+}
+#footernav{
+	width:960px;
+	height:80px;
+	float:left;
+	margin-left:200px;
+
+
+
+
+
+	margin-top:50px;
+	background:url(/assets/footernav-bg.png) no-repeat;
+}
+.logo{
+	width:375px;
+	height:124px;
+	float:left;
+
+}
+.regester{
+	background:url(/assets/regester-btn-bg.png) no-repeat;
+	width:86px;
+	height:35px;
+	float:left;
+	margin-top:30px;
+	margin-left:280px;
+}
+.regester-text{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-style:italic;
+	padding-top:10px;
+	padding-left:15px;
+
+}
+.regester-text a{
+	color:#000;
+	text-decoration:none;
+}
+.login-bg{
+	background:url(/assets/login-bg.png) no-repeat;
+	width:74px;
+	height:34px;
+	float:left;
+	margin-top:30px;
+	margin-left:5px;
+}
+.login{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#fff;
+	font-style:italic;
+	padding-top:8px;
+	padding-left:15px;
+}
+.login a{
+	color:#fff;
+	text-decoration:none;
+}
+.flag-icon{
+	float:left;
+	margin-top:33px;
+	margin-left:10px;
+}
+.flag2{
+	float:left;
+	margin-top:33px;
+	margin-left:10px;
+}
+.navber{
+	width:530px;
+	float:right;
+	margin-top:40px;
+	margin-left:10px;
+}
+ul.hedder-nav{
+	list-style:none;
+	display:inline;
+}
+ul.hedder-nav li{
+	display:inline;
+	text-decoration:none;
+	font-size:14px;
+
+}
+
+ul.hedder-nav li a:hover{
+	color:#fff;
+	border-radius:3px;
+	background:url(/assets/navbg.png) no-repeat;
+}
+ul.hedder-nav li a{margin:0px;
+	padding:6px 12px 7px 10px;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	text-decoration:none;
+	color:#333;
+}
+.serber-wapper{
+	width:960px;
+	margin:0 auto;
+	padding:0;
+
+}
+.updatest-bg{
+	background:url(/assets/update-bg.png) no-repeat;
+	width:130px;
+	height:33px;
+	float:left;
+	margin-top:4px;
+
+}
+.upader-text{
+	font-size:12px;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	float:left;
+	padding-top:10px;
+	padding-left:15px;
+}
+.upader-text a{
+	color:#fff;
+	text-decoration:none;
+}
+.notifi-icon{
+	float:left;
+	margin-top:10px;
+	margin-left:30px;
+}
+
+.chaticon{
+	float:left;
+	margin-top:10px;
+	margin-left:30px;
+}
+.informa{
+	float:left;
+	margin-top:10px;
+	margin-left:30px;
+}
+.serch{
+	width:320px;
+	height:27px;
+	float:left;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	border:none;
+	position:absolute;
+
+
+}
+.serch-ber{
+
+	width:325px;
+	height:25px;
+	float:left;
+	margin-top:8px;
+	margin-left:30px;
+
+}
+.serch-icon{
+	float:right;
+	position:relative;
+	margin-right:10px;
+	margin-top:5px;
+}
+.groop-icon{
+	float:left;
+	margin-top:10px;
+	margin-left:30px;
+}
+.note{
+	float:left;
+	margin-top:10px;
+	margin-left:30px;
+}
+.gallary{
+	float:left;
+	margin-top:10px;
+	margin-left:30px;
+}
+.body-left-aside{
+	width:200px;
+	height:500px;
+	float:left;
+	margin-top:20px;
+
+}
+.body-right-aside{
+	width:580px;
+	height:850px;
+	border-bottom-left-radius:50px;
+	border-top-left-radius:50px;
+	border-bottom-right-radius:50px;
+	border-top-right-radius:50px;
+
+	background:#E7EBF2;
+	float:left;
+	margin-top:20px;
+	margin-left:50px;
+}
+.deshbord-bg{
+	float:left;
+	width:100%;
+}
+ul.deskbord-profile{
+	list-style:none;
+	margin-top:20px;
+	float:left;
+}
+ul.deskbord-profile li{
+
+	background:url(/assets/arrow-icon.png) no-repeat;
+	padding-left:20px;
+	font-size:14px;
+	color: #0091C6;
+	padding-top:2px;
+
+}
+ul.deskbord-profile li a:hover{
+	color: #0091C6;
+}
+ul.deskbord-profile li a{
+	color: #0091C6;
+	text-decoration:none;
+}
+.changeacc-bg{
+	background:url(/assets/btnbg.png) no-repeat;
+	width:167px;
+	height:38px;
+	margin-top:10px;
+	color:#fff;
+	padding-top:8px;
+	padding-left:7px;
+}
+.changeacc-bg a{
+	color:#fff;
+	text-decoration:none;
+}
+.text-area{
+	width:300px;
+	height:20px;
+	margin-top:10px;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	border:none;
+}
+.Form{
+	float:left;
+	margin-top:10px;
+	margin-left:100px;
+}
+.gender{
+	width:300px;
+	margin-top:10px;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+}
+.email{
+	width:150px;
+	height:30px;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	margin-top:10px;
+
+}
+.option{
+	margin-top:10px;
+}
+.image{
+	margin-top:10px;
+
+}
+.facebook{
+	width:200px;
+	height:50px;
+	margin-top:10px;
+	margin-left:90px;
+}
+.on{
+	margin-top:10px;
+}
+.save-btn{
+	width:200px;
+	height:50px;
+	margin-top:10px;
+}
+ul.footer-nav{
+	list-style:none;
+	float:right;
+	margin-right:30px;
+	margin-top:15px;
+}
+ul.footer-nav li{
+	font-family:Arial, Helvetica, sans-serif;
+	display:inline;
+	font-size:12px;
+	padding-left:5px;
+	text-decoration:none;
+}
+ul.footer-nav li a:hover{
+	text-decoration:none;
+	color:#000;
+}
+ul.footer-nav li a{
+	text-decoration:none;
+	color:#000;
+}
+.footer-texta{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	float:left;
+	margin-top:20px;
+	margin-left:10px;
+}
+.login-form{
+	width:960px;
+	float:left;
+
+
+}
+.regester-email{
+	width:200px;
+	height:18px;
+	float:left;
+	margin-top:10px;
+	margin-left:30px;
+}
+.reg-passwor{
+	width:200px;
+	height:18px;
+	float:left;
+	margin-left:30px;
+	margin-top:10px;
+}
+.keepme-login-e{
+	float:left;
+	margin-top:10px;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	margin-left:30px;
+}
+.keepme-login-e a:hover{
+	color:#fff;
+}
+.keepme-login-e a{
+	color:#fff;
+	text-decoration:none;
+}
+.login-btn5{
+	text-align:center;
+	width:50px;
+	height:25px;
+	border-bottom-left-radius:3px;
+	border-top-left-radius:3px;
+	border-bottom-right-radius:3px;
+	border-top-right-radius:3px;
+	margin-left:10px;
+}
+#regesterbody{
+	width:100%;
+	background:#E7EBF2;
+	height:500px;
+	float:left;
+
+
+}
+#body-wapper{
+	width:960px;
+	margin:0 auto;
+
+}
+
+.regester-form{
+	float:left;
+	margin-top:30px;
+	margin-left:280px;
+}
+.text-are-for-re{
+	width:322px;
+	height:30px;
+	margin-top:10px;
+	border:#bdc7d8;
+	font-size:16px;
+	border:solid 1px;
+	color:#CCC;
+	padding-left:10px;
+	border-bottom-left-radius:3px;
+	border-top-left-radius:3px;
+	border-bottom-right-radius:3px;
+	border-top-right-radius:3px;
+}
+.text-are-for-re1{
+	width:152px;
+	height:30px;
+	margin-top:10px;
+	border:#bdc7d8;
+	font-size:16px;
+	border:solid 1px;
+	color:#CCC;
+	padding-left:10px;
+	border-bottom-left-radius:3px;
+	border-top-left-radius:3px;
+	border-bottom-right-radius:3px;
+	border-top-right-radius:3px;
+
+}
+.birth-day{
+	font-size:20px;
+	color:#999;
+	margin-top:10px;
+}
+.date{
+	width:80px;
+	height:30px;
+	color:#CCC;
+	font-size:14px;
+	padding-left:10px;
+	margin-top:10px;
+}
+.birthday a:hover{
+	font-size:16px;
+	color:#666;
+}
+.birthday a{
+	font-size:16px;
+	color:#666;
+	text-decoration:none;
+}
+.male-fe{
+	margin-top:10px;
+	color:#666;
+}
+.signup-btn{
+	width:150px;
+	height:50px;
+	border-bottom-left-radius:3px;
+	border-top-left-radius:3px;
+	border-bottom-right-radius:3px;
+	border-top-right-radius:3px;
+	margin-left:70px;
+	margin-top:10px;
+	border:solid 1px #CCCCCC;
+	font-weight:bold;
+}
+.singup-text{
+	font-size:24px;
+	margin-top:30px;
+	padding-top:85px;
+	padding-right:10px;
+	font-weight:bold;
+	font-family: "Comic Sans MS", cursive;
+
+	float:left;
+	margin:0 auto;
+	width:960px;
+
+
+}
+
+.singup-text{
+width:200px;
+height:100px;
+background:url(/assets/twteerlogo.png) no-repeat;
+
+position:relative;
+animation-name:myfirst;
+animation-duration:5s;
+animation-timing-function:linear;
+animation-delay:2s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-play-state:running;
+/* Firefox: */
+-moz-animation-name:myfirst;
+-moz-animation-duration:5s;
+-moz-animation-timing-function:linear;
+-moz-animation-delay:2s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:alternate;
+-moz-animation-play-state:running;
+/* Safari and Chrome: */
+-webkit-animation-name:myfirst;
+-webkit-animation-duration:5s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-delay:2s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+/* Opera: */
+-o-animation-name:myfirst;
+-o-animation-duration:5s;
+-o-animation-timing-function:linear;
+-o-animation-delay:2s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:alternate;
+-o-animation-play-state:running;
+}
+
+@keyframes myfirst
+{
+0%   {color:red; left:0px; right:0px; top:0px;}
+25%  {color:yellow; right:300px; left500px; top:300px;}
+50%  {color:blue;  right:300px;  left:500px; top:300px;}
+75%  {color:green; right:300px; left:300px; top:300px;}
+100% {color:red; right:300px; left:500px; top:300px;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {color:red; left:0px; right:0px; top:0px;}
+25%  {color:yellow; right:300px; left500px; top:300px;}
+50%  {color:blue;  right:300px;  left:500px; top:300px;}
+75%  {color:green; right:300px; left:300px; top:300px;}
+100% {color:red; right:300px; left:500px; top:300px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {color:red; left:0px; right:0px; top:0px;}
+25%  {color:yellow; right:300px; left500px; top:300px;}
+50%  {color:blue;  right:300px;  left:500px; top:300px;}
+75%  {color:green; right:300px; left:300px; top:300px;}
+100% {color:red; right:300px; left:500px; top:300px;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {color:red; left:0px; right:0px; top:0px;}
+25%  {color:yellow; right:300px; left500px; top:300px;}
+50%  {color:blue;  right:300px;  left:500px; top:300px;}
+75%  {color:green; right:300px; left:300px; top:300px;}
+100% {color:red; right:300px; left:500px; top:300px;}
+}

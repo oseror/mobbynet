@@ -1,4 +1,4 @@
-<h2>Sign in</h2>
+<!--<h2>Sign in</h2>
 
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
   <div><%= f.label :email %><br />
@@ -15,3 +15,64 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+ -->
+
+  <section id="serchber">
+
+        <section class="serber-wapper">
+
+		  <!--form action="index.html" method="get" class="login-form">
+           <p class="keepme-login-e"> <input name="" type="checkbox" value="Keep me logged in"  class="keepmelogin"/>
+            <a href="#"> Keep me logged in</a></p>
+
+           <input name="" type="text" placeholder="Email or Phone Or Name"  class="regester-email" />
+           <input name="" type="password" placeholder="Password"  class="reg-passwor"/>
+            <p class="keepme-login-e">
+            <a href="#">Forgot your password?</a>
+            <input name="" type="button" value="Login" class="login-btn5" />  </p>
+
+            </form>-->
+
+
+        </section>
+
+
+
+
+   <!-- serchber-->    </section>
+
+
+            <section id="regesterbody">
+            <section id="body-wapper">
+
+            <h3 class="singup-text">Sign Up Now</h3>
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name),:class=>"regester-form") do |f| %>
+  <div>
+  <%= f.label :email,:style=>"padding-right:28px;" %><%= f.email_field :email, :autofocus => true,:Placeholder=>"Your Email",:class=>"text-are-for-re" %></div>
+
+  <p><%= f.label :password %>
+  <%= f.password_field :password, :autofocus => true,:Placeholder=>"Your password",:class=>"text-are-for-re" %></p>
+<br/>
+  <% if devise_mapping.rememberable? -%>
+    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+  <% end -%><br/>
+
+  <div><%= f.submit "Sign in",:class=>"login-btn5" %></div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+
+
+
+            
+
+
+            </section>
+
+
+
+
+            </section>
