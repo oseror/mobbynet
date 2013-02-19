@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.min
 //= require_tree .
 //= jquery.cslider
 //= modernizr.custom
