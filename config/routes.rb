@@ -1,16 +1,8 @@
 Mobbynet::Application.routes.draw do
-  get "users/index"
-
-  get "users/new"
-
-  get "users/edit"
-
-  get "users/update"
-
-  get "users/delete"
+  resources :users
 
   devise_for :users
-  resources :users
+  
   root :to => 'home#index'
 
   # The priority is based upon order of creation:

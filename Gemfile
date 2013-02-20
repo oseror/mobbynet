@@ -6,7 +6,7 @@ gem 'devise'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem "paperclip", "~> 2.5.0"
 group :development, :test do
   gem 'mysql2', '> 0.3'
 end
