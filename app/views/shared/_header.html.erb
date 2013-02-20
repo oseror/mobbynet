@@ -1,10 +1,12 @@
 
 <section id="hedder">
 
+
   <section class="logo"><a href="#"><img src="/assets/logo.jpg"  alt="" /></a></section>
   <% if !user_signed_in? %>
     <section class="regester">
       <p class="regester-text"><a href="<%= new_user_registration_path %>">Register</a></p>
+
     </section>
 
     <section class="login-bg">
@@ -19,6 +21,7 @@
     <section class="regester" style="margin-left:15px">
       <p class="regester-text" ><%= link_to 'sign out', destroy_user_session_path, :method => :delete %></p>
     </section>
+
   </div>
   <% end %>
 <%# if user_signed_in? %>
@@ -49,5 +52,3 @@
 
 
 <!--  hedder--></section>
-
-

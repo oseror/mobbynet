@@ -564,6 +564,7 @@ animation-play-state:running;
 -o-animation-play-state:running;
 }
 
+/*
 @keyframes myfirst
 {
 0%   {color:red; left:0px; right:0px; top:0px;}
@@ -573,7 +574,7 @@ animation-play-state:running;
 100% {color:red; right:300px; left:500px; top:300px;}
 }
 
-@-moz-keyframes myfirst /* Firefox */
+@-moz-keyframes myfirst 
 {
 0%   {color:red; left:0px; right:0px; top:0px;}
 25%  {color:yellow; right:300px; left500px; top:300px;}
@@ -582,7 +583,7 @@ animation-play-state:running;
 100% {color:red; right:300px; left:500px; top:300px;}
 }
 
-@-webkit-keyframes myfirst /* Safari and Chrome */
+@-webkit-keyframes myfirst 
 {
 0%   {color:red; left:0px; right:0px; top:0px;}
 25%  {color:yellow; right:300px; left500px; top:300px;}
@@ -591,7 +592,7 @@ animation-play-state:running;
 100% {color:red; right:300px; left:500px; top:300px;}
 }
 
-@-o-keyframes myfirst /* Opera */
+@-o-keyframes myfirst 
 {
 0%   {color:red; left:0px; right:0px; top:0px;}
 25%  {color:yellow; right:300px; left500px; top:300px;}
@@ -599,3 +600,4 @@ animation-play-state:running;
 75%  {color:green; right:300px; left:300px; top:300px;}
 100% {color:red; right:300px; left:500px; top:300px;}
 }
+*/
