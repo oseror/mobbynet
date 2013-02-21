@@ -8,7 +8,7 @@
 	margin: 0px auto;
 	overflow: hidden;
 	background:#FFF;
-
+	
 	-webkit-transition: background-position 1s ease-out 0.3s;
 	-moz-transition: background-position 1s ease-out 0.3s;
 	-o-transition: background-position 1s ease-out 0.3s;
@@ -26,19 +26,19 @@
 }
 
 .first{background:#FFF url(vacation.jpg) no-repeat top center; width:100%;}
-
+	
 .second{background:#FFF url(people.jpg) no-repeat top center;}
 
 .third{background:#FFF url(place.jpg) no-repeat top center; width:100%;}
-
+	
 .forth{background:#FFF url(hand.jpg) no-repeat top center;}
 
 
 
 .sixth{background:#FFF url(shout.jpg) no-repeat top center; width:100%;}
-
+	
 .seven{background:#FFF url(mobile.jpg) no-repeat top center;}
-.eight{background:#fff url(dell.png) no-repeat top center;}
+
 
 
 .da-slide-current{
@@ -56,7 +56,7 @@
 .da-slide .da-img{
 	position: absolute;
 	opacity: 0;
-
+	
 }
 .da-slider-fb .da-slide h2,
 .da-slider-fb .da-slide p,
@@ -69,7 +69,7 @@
 
 
 .da-slider-fb .da-slide .da-img{
-
+	
 	opacity: 1;
 }
 
@@ -79,9 +79,9 @@
 	padding:0px;
 	width:240px;
 	height:455px;
-	background:url(phn.png) no-repeat;
+	background: url(phn.png) no-repeat;
 	margin-top:29px;
-	margin-left:66px;
+	margin-left:66px;  
 	float:left; -webkit-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
 	-moz-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
 	-o-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
@@ -90,8 +90,8 @@
 }
 
 .da-slide .img-text
-{
-	font:Arial, Helvetica, sans-serif;
+{     
+	font-family: Arial, Helvetica, sans-serif;
 	font-size:28px;
 	color:#333;
 	text-shadow:#FFF;
@@ -108,8 +108,8 @@
 }
 
 .da-slide .img-text span
-{
-	font:Arial, Helvetica, sans-serif;
+{   
+	font-family: Arial, Helvetica, sans-serif;
 	font-size:28px;
 	color:#069;
 	text-shadow:#FFF; -webkit-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
@@ -124,7 +124,7 @@
 .da-slide h2{
 	color: #FFF;
 	font-size:24px;
-
+   
 	top: 60px;
 	white-space: nowrap;
 	z-index: 10;
@@ -134,7 +134,7 @@
 	background:#67c4e5;
 }
 .da-slide p{
-
+	
 	top: 115px;
 	color: #FFF;
 	font-size: 18px;
@@ -146,16 +146,16 @@
 	background:#67c4e5;
 }
 .da-slide .da-img{
-
+	
 	text-align: center;
 	width: 30%;
 	top: 70px;
 	height: 256px;
 	line-height: 320px;
-
+	 
 }
 .da-slide .da-link{
-
+	
 	top: 270px; /*depends on p height*/
 	border-radius: 20px;
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
@@ -166,45 +166,43 @@
 	text-decoration:none;
 	font-size: 12px;
 	line-height: 30px;
-
+	
 	text-align: center;
 	background: rgba(255,255,255,0.2);
 }
 .da-slide .da-link:hover{
-
+	
 	background: rgba(255,255,255,0.7);
 }
 .da-dots{
-
-
+	
+	
 	width: 100%;
 	position: absolute;
 	text-align: center;
 	left: 0px;
-	bottom: 10px;
+	bottom: 20px;
 	z-index: 2000;
 	-moz-user-select: none;
 	-webkit-user-select: none;
-
 }
 .da-dots span{
-
-
+	
+	
 	display: inline-block;
 	position: relative;
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
 	background: #999;
-	margin: 5px;
+	margin: 3px;
 	opacity:0.5;
 	cursor: pointer;
-	box-shadow:
-	1px 1px 1px rgba(0,0,0,0.1) inset,
+	box-shadow: 
+	1px 1px 1px rgba(0,0,0,0.1) inset, 
 	1px 1px 1px rgba(255,255,255,0.1);
 }
 .da-dots span.da-dots-current:after{
-
 	content: '';
 	width: 8px;
 	height: 8px;
@@ -224,10 +222,9 @@
 .da-arrows{
 	-moz-user-select: none;
 	-webkit-user-select: none;
-
+	
 }
 .da-arrows span{
-
 	position: absolute;
 	top: 50%;
 	height: 30px;
@@ -237,9 +234,9 @@
 	cursor: pointer;
 	z-index: 2000;
 	opacity: 0;
-	box-shadow:
-
-	1px 1px 1px rgba(0,0,0,0.1) inset,
+	box-shadow: 
+	
+	1px 1px 1px rgba(0,0,0,0.1) inset, 
 	1px 1px 1px rgba(255,255,255,0.1);
 	-webkit-transition: opacity 0.4s ease-in-out-out 0.2s;
 	-moz-transition: opacity 0.4s ease-in-out-out 0.2s;
@@ -249,7 +246,7 @@
 }
 .da-slider:hover .da-arrows span{
 	opacity: 1;
-
+	
 }
 .da-arrows span:after{
 	content: '';
@@ -263,11 +260,11 @@
 	box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 .da-arrows span:hover:after{
-
+	
 	box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 }
 .da-arrows span:active:after{
-
+	
 	box-shadow: 1px 1px 1px rgba(255,255,255,0.1);
 }
 .da-arrows span.da-arrows-next:after{

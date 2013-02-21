@@ -36,7 +36,8 @@
                 <ul class="deskbord-profile">
 
                 <li><a href="#" onclick="$('#profile-sub').toggle();">My Profile</a></li>
-                <ul id="profile-sub"style="list-style: none;padding-left:10px;"><li><a href="#">Creat cv</a></li>
+                <ul id="profile-sub"style="list-style: none;padding-left:10px;">
+                  <li><a href="#">Creat cv</a></li>
                 <li><a href="#">Change Account setting</a></li></ul>
                 <li><a href="#">My People</a></li>
                 <li><a href="#">My Place</a></li>
@@ -65,7 +66,7 @@
           <!--leftaside-->      </div>
                 <div class="body-right-aside">
 
-                <div class="changeacc-bg"><a href="#">Change Account Settings</a></div>
+                <!--<div class="changeacc-bg"><a href="#">Change Account Settings</a></div>-->
 
                 <%= form_for(@user,  :url => user_path(current_user), :html => { :method => :put, :class=>"Form" }) do |f| %>
 
