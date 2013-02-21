@@ -140,9 +140,8 @@
 
 
 
-               <p><%= f.submit "Sign Up now",:class=>"signup-btn" %>
-                <input name="" type="button" value="Sign Up With Facebook"  class="signup-btn"/>
-                </p>
+               <p><%= f.submit "Sign Up now",:class=>"signup-btn" %><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
+              </p>
 
    
 
