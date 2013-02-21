@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.cslider
+//= require modernizr.custom
+//= require mobbynet
 
 
 
