@@ -1,0 +1,45 @@
+<h1>Listing events</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Type</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Host</th>
+    <th>Location</th>
+    <th>Category</th>
+    <th>Comments</th>
+    <th>Avatar file name</th>
+    <th>Avatar content type</th>
+    <th>Avatar file size</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @events.each do |event| %>
+  <tr>
+    <td><%= event.name %></td>
+    <td><%= event.description %></td>
+    <td><%= event.type %></td>
+    <td><%= event.start_time %></td>
+    <td><%= event.end_time %></td>
+    <td><%= event.host %></td>
+    <td><%= event.location %></td>
+    <td><%= event.category_id %></td>
+    <td><%= event.comments %></td>
+    <td><%= event.avatar_file_name %></td>
+    <td><%= event.avatar_content_type %></td>
+    <td><%= event.avatar_file_size %></td>
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Event', new_event_path %>
