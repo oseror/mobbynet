@@ -49,6 +49,8 @@ complete_1.jpg: complete_1-1394f0fdd7d1bfa03d28aa70c4c495ab.jpg
 complete_1/index.jpg: complete_1-1394f0fdd7d1bfa03d28aa70c4c495ab.jpg
 default_user.png: default_user-c17a7367c85e1569d937decf6d050df4.png
 default_user/index.png: default_user-c17a7367c85e1569d937decf6d050df4.png
+dell.png: dell-a3132d68cfb4f0f4ec809d92745f4da2.png
+dell/index.png: dell-a3132d68cfb4f0f4ec809d92745f4da2.png
 deshbord-image.png: deshbord-image-08c8024027d1e3178f1e891345ea1e33.png
 deshbord-image/index.png: deshbord-image-08c8024027d1e3178f1e891345ea1e33.png
 discover-bg.png: discover-bg-75dcbc2a4cc3f9bd5b0f868ea386a10e.png
@@ -179,6 +181,8 @@ notification.jpg: notification-d3914adcb99553ca4363eb0b865ea37a.jpg
 notification/index.jpg: notification-d3914adcb99553ca4363eb0b865ea37a.jpg
 notification_1.jpg: notification_1-d3914adcb99553ca4363eb0b865ea37a.jpg
 notification_1/index.jpg: notification_1-d3914adcb99553ca4363eb0b865ea37a.jpg
+oprater.png: oprater-563f176922244e5c912def0b6408429f.png
+oprater/index.png: oprater-563f176922244e5c912def0b6408429f.png
 people.jpg: people-2c812b43f455877924e030bbe30b21a0.jpg
 people/index.jpg: people-2c812b43f455877924e030bbe30b21a0.jpg
 people_1.jpg: people_1-2c812b43f455877924e030bbe30b21a0.jpg
@@ -291,7 +295,7 @@ women_2.jpg: women_2-84ba04fc08c9d9d466c239894ae5c58b.jpg
 women_2/index.jpg: women_2-84ba04fc08c9d9d466c239894ae5c58b.jpg
 application.js: application-c4439181a0230678bc597d885b9ddd3e.js
 application/index.js: application-c4439181a0230678bc597d885b9ddd3e.js
-application.css: application-665b90ec0a58d14c4ee782c60fed02e1.css
-application/index.css: application-665b90ec0a58d14c4ee782c60fed02e1.css
+application.css: application-8c2ee51bec7f0ebb0abbc7648cca36bb.css
+application/index.css: application-8c2ee51bec7f0ebb0abbc7648cca36bb.css
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 jquery/index.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
