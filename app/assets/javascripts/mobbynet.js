@@ -3,7 +3,7 @@ $(function() {
     autoplay    : true, // auto play slider on load
     bgincrement : 450
   });
-alert('ddd');
+
   $("#src_txt").live("blur", function(){
     var default_value = $(this).attr("rel");
     if ($(this).val() == ""){
