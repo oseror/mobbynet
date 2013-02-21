@@ -47,6 +47,8 @@ complete.jpg: complete-1394f0fdd7d1bfa03d28aa70c4c495ab.jpg
 complete/index.jpg: complete-1394f0fdd7d1bfa03d28aa70c4c495ab.jpg
 complete_1.jpg: complete_1-1394f0fdd7d1bfa03d28aa70c4c495ab.jpg
 complete_1/index.jpg: complete_1-1394f0fdd7d1bfa03d28aa70c4c495ab.jpg
+default_user.png: default_user-c17a7367c85e1569d937decf6d050df4.png
+default_user/index.png: default_user-c17a7367c85e1569d937decf6d050df4.png
 deshbord-image.png: deshbord-image-08c8024027d1e3178f1e891345ea1e33.png
 deshbord-image/index.png: deshbord-image-08c8024027d1e3178f1e891345ea1e33.png
 discover-bg.png: discover-bg-75dcbc2a4cc3f9bd5b0f868ea386a10e.png
@@ -287,8 +289,8 @@ women_1.jpg: women_1-84ba04fc08c9d9d466c239894ae5c58b.jpg
 women_1/index.jpg: women_1-84ba04fc08c9d9d466c239894ae5c58b.jpg
 women_2.jpg: women_2-84ba04fc08c9d9d466c239894ae5c58b.jpg
 women_2/index.jpg: women_2-84ba04fc08c9d9d466c239894ae5c58b.jpg
-application.js: application-722fbcb40bf1494e2ed9e0dfba36eb54.js
-application/index.js: application-722fbcb40bf1494e2ed9e0dfba36eb54.js
+application.js: application-350c4f31b1750d53054389677ebe50d9.js
+application/index.js: application-350c4f31b1750d53054389677ebe50d9.js
 application.css: application-665b90ec0a58d14c4ee782c60fed02e1.css
 application/index.css: application-665b90ec0a58d14c4ee782c60fed02e1.css
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map

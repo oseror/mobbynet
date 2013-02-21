@@ -13,13 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-//= jquery.cslider
-//= modernizr.custom
+//= require jquery.cslider
+//= require modernizr.custom
+//= require mobbynet
 
-$(function() {
-  $('#da-slider').cslider({
-    autoplay    : true, // auto play slider on load
-    bgincrement : 450
-  });
 
-});
