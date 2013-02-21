@@ -73,7 +73,7 @@
                  <%= current_user.email %>
                 </p>
 
-                <p>Email Setting :*<input name="" type="button" value="Email Setting"  class="email"/></p>
+                <!--<p>Email Setting :*<input name="" type="button" value="Email Setting"  class="email"/></p>-->
                 <p>Password :***<input name="" type="button" value=" Change Password"  class="email" /></p>
 
                 <p>Real name:***
@@ -85,7 +85,7 @@
                 </p>
 
                 <p>Gender:*****
-                  <%= f.select :sex, options_for_select(['male','Female'] ),:class=>"gender" %>
+                  <%= f.select :sex, options_for_select(['male','Female'], current_user.sex ),:class=>"gender" %>
                   <!--<select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)" class="gender">
                     <option>Male</option>
                     <option>Female</option>
@@ -204,20 +204,17 @@
                     <p>Website:*****<input type="text" value="" size="" / class="text-area"></p>
 
                     <p class="image">Image******* <img src="/assets/main-image.jpg"  alt="" /></p>
-                    <%= form_for(@user,  :url => user_path(current_user), :html => { :method => :put,:multipart => true }) do |f| %>
-                    <%= f.file_field :user %>
-                    <%= submit_tag"save" %>
-                    <% end %>
+                    <%= f.file_field :avatar %>
                     <!--<input name="" type="button" value="Facebook"  class="facebook"/>-->
 
-                    <p>Link To Facebook  On <input name="" type="radio" value="on"  class="on"/>
+                    <!--<p>Link To Facebook  On <input name="" type="radio" value="on"  class="on"/>
 
                     Off <input name="" type="radio" value="on"  class="on"/>
                     </p>
 
                     <p>Link To Twitter  On<input name="" type="radio" value="on"  class="on"/> Off <input name="" type="radio" value="on"  class="on"/> </p>
 
-      
+      -->
                      <p>
 <%= submit_tag "Save Account",:class=>"save-btn" %>&nbsp;&nbsp;<input name="" type="button" value="Delete Account"  class="save-btn"/>
                        </p>

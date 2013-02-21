@@ -1,8 +1,16 @@
 Mobbynet::Application.routes.draw do
-  resources :users
-
-  devise_for :users
   
+
+
+  devise_for :users do
+
+  end
+
+  resources :users do
+    collection do
+      
+    end
+  end
   root :to => 'home#index'
 
   # The priority is based upon order of creation:

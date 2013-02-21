@@ -15,7 +15,6 @@ class UsersController < ApplicationController
     p params
     @user=User.find(current_user)
     if @user.update_attributes(params[:user])
-      gg
       flash[:notice]="Successfully updated"
       redirect_to edit_user_path(current_user)
     else

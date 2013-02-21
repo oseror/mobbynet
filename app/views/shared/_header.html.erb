@@ -5,12 +5,10 @@
   <section class="logo"><a href="#"><img src="/assets/logo.jpg"  alt="" /></a></section>
   <% if !user_signed_in? %>
     <section class="regester">
-      <p class="regester-text"><a href="<%= new_user_registration_path %>">Register</a></p>
-
+      <p class="regester-text"><a href="/users/sign_up">Register</a></p>
     </section>
-
     <section class="login-bg">
-      <p class="login"><a href="/users/sign_in">Login</a></p>
+      <p class="login"><a href=<%= new_user_session_path %>>Login</a></p>
     </section>
   <% else%>
   <div>
