@@ -18,3 +18,8 @@
  #main_container {
    min-height: 500px;
 }
+
+#sign_up_page {
+  width: 600px;
+  border: 2px solid black;
+}
