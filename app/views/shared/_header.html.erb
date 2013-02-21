@@ -5,7 +5,7 @@
   <section class="logo"><a href="#"><img src="/assets/logo.jpg"  alt="" /></a></section>
   <% if !user_signed_in? %>
     <section class="regester">
-      <p class="regester-text"><a href="<%= new_user_registration_path %>">Register</a></p>
+      <p class="regester-text"><%= link_to "Register", new_user_registration_path %></p>
 
     </section>
 

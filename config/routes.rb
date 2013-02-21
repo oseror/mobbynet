@@ -1,5 +1,5 @@
 Mobbynet::Application.routes.draw do
-  resources :users
+  #resources :users
 
   devise_for :users
   
