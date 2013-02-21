@@ -474,6 +474,7 @@ margin-top:15px;
 	width:100%;
 	height:43px;
 	background:#333333;
+/*        background: url(/assets/dark.jpg) repeat-x scroll 0 0 transparent;*/
 }
 .top-d
 {
@@ -482,6 +483,7 @@ margin-top:15px;
 	width:980px;
 	height:34px;
 	margin-top:-38px;
+/*        background: url(/assets/dark.jpg) repeat-x scroll 0 0 transparent;*/
 	
 }
 .update
