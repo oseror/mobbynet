@@ -2,8 +2,15 @@
 <html>
   <head>
     <title> Mobbynet </title>
-    <%= stylesheet_link_tag  "application", :media => "all" %>
-    <%= javascript_include_tag "application", :media => "all" %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= stylesheet_link_tag "source" %>
+    <%= stylesheet_link_tag "style" %>
+    <%= stylesheet_link_tag "tsc_parallax" %>
+
+<%= javascript_include_tag "application", :media => "all" %>
+    <%= javascript_include_tag "jquery.cslider" %>
+    <%= javascript_include_tag "modernizr.custom" %>
+    <%= javascript_include_tag "mobbynet" %>
     <script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/document_iterator.js"></script>
     <script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/find_proxy.js"></script>
     <script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/get_html_text.js"></script>
