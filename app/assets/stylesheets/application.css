@@ -23,3 +23,16 @@
   width: 600px;
   border: 2px solid black;
 }
+
+#user_scopes{
+  margin: 25px 300px;
+}
+
+#user_scopes .row {
+  width: 33%;
+  float: left;
+}
+
+#user_scopes h2 {
+  color: #0091C6;
+}
