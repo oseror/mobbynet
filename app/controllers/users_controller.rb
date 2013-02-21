@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def index
+    @users = User.all
   end
 
   def new
@@ -7,6 +8,10 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user=User.find(current_user)
+  end
+
+  def show
     @user=User.find(current_user)
   end
 
@@ -32,5 +37,9 @@ class UsersController < ApplicationController
     
     p"-----------------------------------"
     ddfd
+  end
+
+  def destroy
+    redirect_to destroy_user_session_path, :method => 'DELETE'
   end
 end
