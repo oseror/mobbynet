@@ -497,7 +497,7 @@ margin-top:15px;
 	
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-	border-radius: 3px
+	border-radius: 3px;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:14px;
 	color:#FFF;
@@ -911,7 +911,7 @@ float:left;
 		-webkit-border-radius: 3px;
 -moz-border-radius: 3px;
 border-radius: 3px;
-border:solid 1px 
+border:solid 1px;
 font-family:Arial, Helvetica, sans-serif;
 font-size:13px;
 color:#FFF;
@@ -941,7 +941,7 @@ margin-left:10px;
 		-webkit-border-radius: 3px;
 -moz-border-radius: 3px;
 border-radius: 3px;
-border:solid 1px 
+border:solid 1px;
 font-family:Arial, Helvetica, sans-serif;
 font-size:13px;
 color:#FFF;
