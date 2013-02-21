@@ -14,3 +14,12 @@
  *= require style
  *= require tsc_parallax
  */
+
+ #main_container {
+   min-height: 400px;
+}
+
+#sign_up_page {
+  width: 600px;
+  border: 2px solid black;
+}

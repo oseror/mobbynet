@@ -27,7 +27,10 @@
   <body>
   <section id="mainwapper">
     <%= render "shared/header" %>
-    <%= yield %>
+    <div style="clear:both;"></div>
+    <div id="main_container">
+      <%= yield %>
+    </div>
     <%= render "shared/footer" %>
   </section>
 </body>
