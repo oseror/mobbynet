@@ -7,6 +7,8 @@ gem 'devise'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem "paperclip", "~> 2.5.0"
+gem 'omniauth'
+gem 'omniauth-facebook'
 group :development, :test do
   gem 'mysql2', '> 0.3'
 end
