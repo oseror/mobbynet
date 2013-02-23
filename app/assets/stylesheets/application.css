@@ -12,10 +12,10 @@
  *= require source
  *= require style
  *= require tsc_parallax
- */
+*/
 
- #main_container {
-   min-height: 400px;
+#main_container {
+  min-height: 400px;
 }
 
 #sign_up_page {
@@ -34,4 +34,55 @@
 
 #user_scopes h2 {
   color: #0091C6;
+}
+
+/* Registration home page */
+
+#regisration {
+  width: 100%;
+  border: 1px solid #0091C6;
+}
+
+.signup_option_box {
+  width: 30%;
+  float: left;
+  min-height: 200px;
+  margin: 10px;
+  border: 1px solid #0091C6;
+  cursor: pointer;
+}
+
+.signup_option_box:hover {
+  background: #CCCCCC;
+}
+.signup_option_box h2 {
+  margin: 70px 0 0 70px;
+  color: #0091c6;
+}
+
+.consumer {
+
+}
+
+.merchant{
+
+}
+
+.user{
+
+}
+
+.field {  
+}
+
+.field label {
+  width: 150px;
+  float: left;
+  padding: 0 0 0 150px;
+}
+
+.field input {
+  float: left;
+  margin-left: 335px;
+  padding: 0 0 0 10px;
 }

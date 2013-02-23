@@ -1,0 +1,38 @@
+<div id="registration">
+  <div class="signup_option_box consumer">
+    <h2> Consumer Signup</h2>
+  </div>
+  <div class="signup_option_box merchant">
+    <h2> Merchant Signup</h2>
+  </div>
+  <div class="signup_option_box user">
+    <h2> User Signup</h2>
+  </div>
+</div>
+
+<script>
+
+  $(".consumer").click(function(){
+    $.ajax({
+      type: "GET",
+      url: '/registration',
+      data: {registration_type: 'consumer'}
+    })
+  });
+
+  $(".merchant").click(function(){
+    $.ajax({
+      type: "GET",
+      url: '/registration',
+      data: {registration_type: 'merchant'}
+    })
+  });
+  $(".user").click(function(){
+    $.ajax({
+      type: "GET",
+      url: '/registration',
+      data: {registration_type: 'user'}
+    })
+  });
+
+</script>

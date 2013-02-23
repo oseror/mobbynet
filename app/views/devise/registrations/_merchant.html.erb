@@ -1,0 +1,19 @@
+<section id="serchber">
+  <section class="serber-wapper">
+    <section class="regester-img" style="float:left; margin-left: 400px;color: #0091C6;"><h2>Merchant Sign up</h2></section>
+  </section>
+  <!-- serchber-->    </section>
+<section id="regesterbody">
+  <section id="body-wapper">
+    <%= form_for :user, :url => user_registration_path(@user) do |f| %>
+      <%= f.hidden_field :user_type, :value => "merchant" %>
+      <div class="field"><%= f.text_field :username, :autofocus => true, :Placeholder=>"Real Name", :class=>"text-are-for-re" %></div>
+      <div class="field"><%= f.email_field :email, :autofocus => true,:Placeholder=>"Email", :class=>"text-are-for-re" %></div>
+      <div class="field"><%= f.password_field :password,:Placeholder=>"Password", :class=>"text-are-for-re" %></div>
+      <div class="field"><%= f.password_field :password_confirmation,:Placeholder=>"Re Enter Password", :class=>"text-are-for-re" %></div><br/>
+      <div style="clear:both;"></div>
+      <div><%= show_simple_captcha %></div>
+      <div class="field"><%= f.submit "Sign Up now",:class=>"signup-btn" %><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></div>
+    <% end %>
+  </section>
+</section>

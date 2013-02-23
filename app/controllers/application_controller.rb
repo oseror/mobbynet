@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  include SimpleCaptcha::ControllerHelpers
   #  before_filter :authenticate_user!, :except =>"home"
 
 
