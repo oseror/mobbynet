@@ -1,4 +1,4 @@
-
+0
 	<section class="top-dark">
     </section>
 <section id="wrapper">
@@ -28,13 +28,21 @@
         </section>
         <section id="navi3">
  				     <ul>
-    				    <li> <a href="">My profile </a></li>
+    				    <li onclick="$('#profile-sub').toggle();"> <a href="">My profile </a></li>
+                                    <ul id="profile-sub"style="list-style: none;padding-left:10px;">
+                  <li><a href="#">Creat cv</a></li>
+                <li><a href="#">Change Account setting</a></li></ul>
     				    <li> <a href="">My Place</a></li>
       					<li> <a href="">My People  </a></li>
-     				   <li> <a href="<%= user_events_events_path(current_user) %>">My Events</a></li>
+     				   <li onclick="$('#event-list').toggle();"> <a href="#">My Events</a></li>
+                                   <ul id="event-list" style="list-style: none;padding-left:10px;display:none;">
+                    <li><a href="#">Creat Events</a></li>
+                <li><a href="<%= user_events_events_path(current_user)%>">View Events</a></li>
+                <li><a href="#">Delate Events</a></li></ul>
      				   <li> <a href="">My Deals</a></li>
      				 </ul>
   		</section>
+      <section id="navi3">
        <section class="bottom-navi">
         	<section class="btm-icon1"> <a href="#"><%= image_tag('iew.png') %></a> </section> <section class="btm-text"> <a href="#"> View Profile </a> </section>
 
@@ -45,7 +53,7 @@
        <section class="bottom-navi1">
         	<section class="btm-icon1"> <a href="#"><%= image_tag('find.png') %></a> </section> <section class="btm-text">  <a href="#">Find Friends</a></section>
         </section>
-
+      </section>
 
     </section>
 <section class="middle-area">
