@@ -39,7 +39,7 @@
 	
 .seven{background:#FFF url(mobile.jpg) no-repeat top center;}
 
-
+.eight{background:#fff url(dell.png) no-repeat top center;}
 
 .da-slide-current{
 	z-index: 1000;
@@ -255,7 +255,7 @@
 	height: 20px;
 	top: 5px;
 	left: 5px;
-	background: transparent url(arrows.png) no-repeat top left;
+	background: transparent  no-repeat top left;
 	border-radius: 50%;
 	box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
@@ -272,11 +272,11 @@
 }
 .da-arrows span.da-arrows-prev{
 	left: 15px;
-	background:url(previews.png);
+	background:url(/assets/previews.png);
 }
 .da-arrows span.da-arrows-next{
 	right: 15px;
-	background:url(next.png);
+	background:url(/assets/next.png);
 }
 
 .da-slide-current h2,

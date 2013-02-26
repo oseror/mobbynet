@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
     :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :provider, :uid, :avatar,:email, :password, :password_confirmation, :remember_me,  :username, :age, :sex, :base_location, :real_name,:user,:user_file_name,:user_content_type,:user_file_size
+  attr_accessible :provider, :uid, :avatar,:email, :password, :password_confirmation, :remember_me, :user_type, :username, :age, :sex, :base_location, :real_name,:user,:user_file_name,:user_content_type,:user_file_size
   # attr_accessible :title, :body
   has_attached_file :avatar,
     :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
@@ -19,7 +19,6 @@ class User < ActiveRecord::Base
   protected
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(:provider => auth.provider, :uid => auth.uid).first
-    p"======================================================"
     unless user
       user = User.create(name:auth.extra.raw_info.name,
         provider:auth.provider,
@@ -38,6 +37,5 @@ class User < ActiveRecord::Base
       end
     end
   end
-
 
 end

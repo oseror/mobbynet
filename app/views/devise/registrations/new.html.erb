@@ -1,3 +1,4 @@
+
 <!--<div style="clear: both;"></div>
 <div id="sign_up_page">
   <h2>Sign up</h2>
@@ -156,3 +157,10 @@
 
 
             </section>
+
+<%if params[:user][:user_type]%>
+  <%= render "#{params[:user][:user_type]}" %>
+<% else %>
+  <%= render "user" %>
+<% end %>
+

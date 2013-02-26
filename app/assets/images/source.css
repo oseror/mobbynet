@@ -1,10 +1,3 @@
-*{
-	margin:0 auto;
-	padding:0;
-}
-
-
-
 body
 {
 	margin:0px auto;
@@ -19,11 +12,6 @@ body
 	height:auto;
 }
 
-#mainwapper{
-	width:100%;
-	margin:0 auto;
-	padding:0;
-}
 #top
 {
 	margin:0px auto;
@@ -72,19 +60,19 @@ body
 {
 	margin:0px;
 	padding:0px;
-	width:75px;
-	height:30px;
-	background:url(/assets/login-bg.png);
+	width:70px;
+	height:25px;
+	background:url(images/bg-blue.jpg) repeat-x;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:14px;
 	font-style:italic;
 	color:#FFF;
 	float:left;
-	padding-top:5px;
+	padding-top:4px;
 	-webkit-border-radius: 3px;
 -moz-border-radius: 3px;
 border-radius: 3px;
-
+border:solid 1px #069;
 	
 }
 .btn1 a
@@ -101,20 +89,19 @@ border-radius: 3px;
 {
 	margin:0px;
 	padding:0px;
-	width:88px;
-	height:30px;
-	font-weight: 200;
-	background: url(/assets/regester-btn-bg.png) repeat-x;
+	width:80px;
+	height:25px;
+	background:url(images/bg-gry.jpg) repeat-x;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:14px;
 	font-style:italic;
 	float:left;
-	padding-top:7px;
+	padding-top:4px;
 	-webkit-border-radius: 3px;
 -moz-border-radius: 3px;
 border-radius: 3px;
-margin-right:2px;
-
+margin-right:12px;
+border:solid 1px #CCC;
 	
 }
 .btn2 a
@@ -158,7 +145,6 @@ margin-right:2px;
 }
 #navi ul li
 {
-	text-align:center;
 	margin:0px;
 	padding:0px;
 	float:left; 
@@ -168,7 +154,7 @@ margin-right:2px;
 #navi ul li a
 {
 	margin:0px;
-	padding:6px 12px 7px 10px;
+	padding:6px 10px 7px 10px;
 	float:left; 
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:13px;
@@ -178,7 +164,7 @@ margin-right:2px;
 }
 #navi ul li a:hover
 {
-	background: url(/assets/navbg.png);
+	background:url(images/btn-bg.jpg) repeat-x top center;
 	border-radius:3px;
 	color:#FFF;
 }
@@ -191,7 +177,7 @@ margin-right:2px;
 	width:100%;
 	height:470px;
 	float:left;
-	background:url(/assets/mg.jpg);
+	background:url(images/mg.jpg);
 }
 	
 .banner-img
@@ -257,6 +243,7 @@ margin-right:2px;
 	width:190px;
 	height:30px;
 	float:right;
+	margin-right:40px;
 }
 .search input
 {
@@ -302,7 +289,7 @@ margin-top:15px;
 	width:260px;
 	height:60px;
 	float:left;
-	background: url(/assets/everything-bg.png) no-repeat;
+	background:url(images/tab1.png) no-repeat;
 }
 .tab01-img
 {
@@ -334,7 +321,7 @@ margin-top:15px;
 	width:285px;
 	height:60px;
 	float:left;
-	background: url(/assets/findshare-bg.png) no-repeat;
+	background:url(images/tab2.png) no-repeat;
 	margin-left:60px;
 }
 .tab02-img
@@ -366,7 +353,7 @@ margin-top:15px;
 	width:258px;
 	height:60px;
 	float:left;
-	background: url(/assets/everything-bg.png) no-repeat;
+	background:url(images/tab3.png) no-repeat;
 	margin-left:60px;
 }
 .tab03-img
@@ -397,7 +384,7 @@ margin-top:15px;
 	padding:0px;
 	width:990px;
 	height:65px;
-	background: url(/assets/footernav-bg.png) no-repeat;
+	background:url(images/footer.png) no-repeat;
 	float:left;
 
 }
@@ -473,8 +460,7 @@ margin-top:15px;
 	padding:0px;
 	width:100%;
 	height:43px;
-	background:#333333;
-/*        background: url(/assets/dark.jpg) repeat-x scroll 0 0 transparent;*/
+	background:url(images/dark.jpg) repeat-x;
 }
 .top-d
 {
@@ -483,29 +469,25 @@ margin-top:15px;
 	width:980px;
 	height:34px;
 	margin-top:-38px;
-/*        background: url(/assets/dark.jpg) repeat-x scroll 0 0 transparent;*/
-	
 }
 .update
 {
-	margin:0 auto;
-	padding:0;
-	
-	
-	width:127px;
-	height:30px;
+	margin:0px;
+	padding:0px;
+	width:122px;
+	height:23px;
 	float:left;
-	background: url(/assets/update-bg.png)  no-repeat;
-	
+	background:url(images/updates.jpg) repeat-x;
+	border:#666 1px solid;
 	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:14px;
-	color:#FFF;
-	padding-top:8px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:13px;
+color:#FFF;
+padding-top:6px;
 
-	padding-left:15px;
+padding-left:5px;
 
 }
 
@@ -548,12 +530,11 @@ margin-top:15px;
 
 .search1
 {
-	padding-right:2px;
-	padding-left:2px;
+	margin:0px;
+	padding:0px;
 	width:320px;
-	height:31px;
+	height:30px;
 	float:left;
-	background: url(/assets/serch-bg.png);
 
 }
 .search1 input
@@ -563,7 +544,7 @@ margin-top:15px;
 	width:320px;
 	height:30px;
 	float:left;
-	background:url(/assets/text-bg.png) repeat-x;
+	background:url(images/text-bg.png) repeat-x;
 		-webkit-border-radius: 3px;
 -moz-border-radius: 3px;
 border-radius: 3px;
@@ -636,7 +617,7 @@ border:solid 1px #CCC;
 	padding:0px;
 	width:196px;
 	height:35px;
-	background:url(/assets/blue.png) repeat-x;
+	background:url(images/blue.png) repeat-x;
 	border: 1px solid #0091c6;
 			-webkit-border-radius: 3px;
 -moz-border-radius: 3px;
@@ -732,7 +713,7 @@ float:left;
 }
 #navi3 ul li a:hover
 {
-	background:url(/assets//btn-bg0.png);
+	background:url(images/btn-bg0.png);
 	color:#333;
 	width:190px;
 
@@ -884,13 +865,13 @@ float:left;
 		-webkit-border-radius: 3px;
 -moz-border-radius: 3px;
 border-radius: 3px;
-border:solid 1px;
+border:solid 1px #06C;
 font-family:Arial, Helvetica, sans-serif;
 font-size:13px;
 color:#FFF;
-background: url(/assets/blue-btn.png);
+background:url(images/blue.png) repeat-x;
 padding-top:8px;
-padding-left:10px;
+padding-left:15px;
 margin-top:8px;
 float:left;
 }
@@ -913,11 +894,11 @@ float:left;
 		-webkit-border-radius: 3px;
 -moz-border-radius: 3px;
 border-radius: 3px;
-border:solid 1px;
+border:solid 1px #333;
 font-family:Arial, Helvetica, sans-serif;
 font-size:13px;
 color:#FFF;
-background:url(/assets/black-btn.png) repeat-x;
+background:url(images/grey.png) repeat-x;
 padding-top:8px;
 padding-left:15px;
 margin-top:8px;
@@ -943,11 +924,11 @@ margin-left:10px;
 		-webkit-border-radius: 3px;
 -moz-border-radius: 3px;
 border-radius: 3px;
-border:solid 1px;
+border:solid 1px #333;
 font-family:Arial, Helvetica, sans-serif;
 font-size:13px;
 color:#FFF;
-background:url(/assets/black-btn2.png) repeat-x;
+background:url(images/grey.png) repeat-x;
 padding-top:8px;
 padding-left:12px;
 margin-top:8px;
@@ -1109,7 +1090,7 @@ border:solid 1px #06C;
 font-family:Arial, Helvetica, sans-serif;
 font-size:13px;
 color:#FFF;
-background:url(/assets/blue.png) repeat-x;
+background:url(images/blue.png) repeat-x;
 padding-top:5px;
 padding-left:15px;
 margin-top:8px;
@@ -1162,7 +1143,7 @@ border:solid 1px #06C;
 font-family:Arial, Helvetica, sans-serif;
 font-size:13px;
 color:#FFF;
-background:url(/assets/blue.png) repeat-x;
+background:url(images/blue.png) repeat-x;
 padding-top:5px;
 padding-left:10px;
 margin-top:8px;
@@ -1192,7 +1173,7 @@ border:solid 1px #333;
 font-family:Arial, Helvetica, sans-serif;
 font-size:13px;
 color:#FFF;
-background:url(/assets/grey.png) repeat-x;
+background:url(images/grey.png) repeat-x;
 padding-top:5px;
 padding-left:10px;
 margin-top:8px;
@@ -1222,7 +1203,7 @@ border:solid 1px #333;
 font-family:Arial, Helvetica, sans-serif;
 font-size:13px;
 color:#FFF;
-background:url(/assets/grey.png) repeat-x;
+background:url(images/grey.png) repeat-x;
 padding-top:5px;
 padding-left:10px;
 margin-top:8px;
@@ -1253,7 +1234,7 @@ border:solid 1px #333;
 font-family:Arial, Helvetica, sans-serif;
 font-size:13px;
 color:#FFF;
-background:url(/assets/grey.png) repeat-x;
+background:url(images/grey.png) repeat-x;
 padding-top:5px;
 padding-left:10px;
 float:right;
@@ -1531,7 +1512,7 @@ border:solid 1px #06C;
 font-family:Arial, Helvetica, sans-serif;
 font-size:13px;
 color:#FFF;
-background:url(/assets/blue.png) repeat-x;
+background:url(images/blue.png) repeat-x;
 padding-top:5px;
 padding-left:10px;
 float:left;

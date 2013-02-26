@@ -54,6 +54,9 @@ GEM
       multi_json (~> 1.0)
     faraday (0.8.5)
       multipart-post (~> 1.1)
+
+    galetahub-simple_captcha (0.1.3)
+
     hashie (1.2.0)
     heroku (2.35.0)
       heroku-api (~> 0.3.7)
@@ -136,7 +139,7 @@ GEM
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rubyzip (0.9.9)
-    sass (3.2.5)
+    sass (3.2.6)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -155,9 +158,9 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.35)
-    uglifier (1.3.0)
+    uglifier (1.0.3)
       execjs (>= 0.3.0)
-      multi_json (~> 1.0, >= 1.0.2)
+      multi_json (>= 1.0.2)
     warden (1.2.1)
       rack (>= 1.0)
 
@@ -167,9 +170,13 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
+  galetahub-simple_captcha
   heroku
   jquery-rails
   mysql2 (> 0.3)
+
+  oauth2
+
   omniauth
   omniauth-facebook
   paperclip (~> 2.5.0)
@@ -177,4 +184,4 @@ DEPENDENCIES
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)
   therubyracer
-  uglifier (>= 1.0.3)
+  uglifier (= 1.0.3)
