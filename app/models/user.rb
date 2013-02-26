@@ -19,7 +19,6 @@ class User < ActiveRecord::Base
   protected
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(:provider => auth.provider, :uid => auth.uid).first
-    p"======================================================"
     unless user
       user = User.create(name:auth.extra.raw_info.name,
         provider:auth.provider,
@@ -38,6 +37,5 @@ class User < ActiveRecord::Base
       end
     end
   end
-
 
 end

@@ -172,6 +172,7 @@ DEPENDENCIES
   heroku
   jquery-rails
   mysql2 (> 0.3)
+  oauth2
   omniauth
   omniauth-facebook
   paperclip (~> 2.5.0)
