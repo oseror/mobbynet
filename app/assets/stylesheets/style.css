@@ -590,41 +590,43 @@ animation-play-state:running;
 -o-animation-play-state:running;
 }
 
+
 @keyframes myfirst
 {
 0%   {color:red; left:0px; right:0px; top:0px;}
-25%  {color:yellow; right:300px; left500px; top:300px;}
+25%  {color:yellow; right:300px; left:500px; top:300px;}
 50%  {color:blue;  right:300px;  left:500px; top:300px;}
 75%  {color:green; right:300px; left:300px; top:300px;}
 100% {color:red; right:300px; left:500px; top:300px;}
 }
 
-@-moz-keyframes myfirst /* Firefox */
+@-moz-keyframes myfirst 
 {
 0%   {color:red; left:0px; right:0px; top:0px;}
-25%  {color:yellow; right:300px; left500px; top:300px;}
+25%  {color:yellow; right:300px; left:500px; top:300px;}
 50%  {color:blue;  right:300px;  left:500px; top:300px;}
 75%  {color:green; right:300px; left:300px; top:300px;}
 100% {color:red; right:300px; left:500px; top:300px;}
 }
 
-@-webkit-keyframes myfirst /* Safari and Chrome */
+@-webkit-keyframes myfirst 
 {
 0%   {color:red; left:0px; right:0px; top:0px;}
-25%  {color:yellow; right:300px; left500px; top:300px;}
+25%  {color:yellow; right:300px; left:500px; top:300px;}
 50%  {color:blue;  right:300px;  left:500px; top:300px;}
 75%  {color:green; right:300px; left:300px; top:300px;}
 100% {color:red; right:300px; left:500px; top:300px;}
 }
 
-@-o-keyframes myfirst /* Opera */
+@-o-keyframes myfirst
 {
 0%   {color:red; left:0px; right:0px; top:0px;}
-25%  {color:yellow; right:300px; left500px; top:300px;}
+25%  {color:yellow; right:300px; left:500px; top:300px;}
 50%  {color:blue;  right:300px;  left:500px; top:300px;}
 75%  {color:green; right:300px; left:300px; top:300px;}
 100% {color:red; right:300px; left:500px; top:300px;}
 }
+
 .regester-img{
 	float:left;
 	margin-left:400px;
@@ -990,7 +992,7 @@ animation-play-state:running;
 	height:40px;
 	border-bottom-left-radius:5px;
 	border-top-left-radius:5px;
-	border-bottom-right-radius15px;
+	border-bottom-right-radius:15px;
 	border-top-right-radius:5px;
 	margin-left:30px;
 }
@@ -1003,7 +1005,7 @@ animation-play-state:running;
 	height:40px;
 	border-bottom-left-radius:5px;
 	border-top-left-radius:5px;
-	border-bottom-right-radius15px;
+	border-bottom-right-radius:15px;
 	border-top-right-radius:5px;
 	margin-left:30px;
 }
@@ -1016,7 +1018,7 @@ animation-play-state:running;
 	height:40px;
 	border-bottom-left-radius:5px;
 	border-top-left-radius:5px;
-	border-bottom-right-radius15px;
+	border-bottom-right-radius:15px;
 	border-top-right-radius:5px;
 	margin-left:30px;
 }
@@ -1145,7 +1147,7 @@ animation-play-state:running;
 	margin-top:10px;
 	border-bottom-left-radius:5px;
 	border-top-left-radius:5px;
-	border-bottom-right-radius15px;
+	border-bottom-right-radius:15px;
 	border-top-right-radius:5px;
 }
 .who-like-img{
