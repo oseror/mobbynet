@@ -1,8 +1,29 @@
+
 <div id="user_lists">
-  <% @users.each do |user| %>
-  <div style="min-height: 200px; min-width: 200px; border: 1px solid black;float:left; margin: 0 5px;">
-    <%#= user.username %>
-    <%= image_tag('default_user.png') %>
+  <div id="left_panel">
+    <div id="profile_pics">
+      <%= image_tag('default_user.png', :style=> "width: 100px; height: 100px;") %>
+    </div>
+    <div style="clear:both;"></div>
+    <span>Followers: 0</span><br/>
+    <span>Followings: 0</span>
   </div>
-  <% end %>
+  <div id="right_panel">
+    <% @users.each do |user| %>
+      <div style="min-height: 100px; min-width: 600px; border: 1px solid gainsboro;float:left; margin: 5px;">
+
+        <div id="profile_pics">
+          <%= image_tag('default_user.png', :style=> "width: 100px; height: 100px;") %>
+        </div>
+        <div id="profile_content">
+          <span>Username: <%= user.username %></span><br/>
+          <span>Email: <%= user.email %></span>
+        </div>
+        <div id="invite_link">
+          <%= link_to "Add as a Friend", "#"%>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div style="clear: both;"> </div>
 </div>

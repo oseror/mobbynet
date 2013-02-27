@@ -86,3 +86,31 @@
   margin-left: 335px;
   padding: 0 0 0 10px;
 }
+
+#user_lists #left_panel {
+  width: 20%;
+  float: left;
+  border: 1px solid gainsboro;
+  padding: 10px;
+  margin: 5px 10px;
+}
+
+#user_lists #right_panel {
+  width: 74%;
+  float: right;
+}
+
+#profile_pics {
+  width: 20%;
+  float: left;
+}
+
+#profile_content {
+  width: 54%;
+  float: left;
+}
+
+#invite_link {
+  width: 25%;
+  float: right;
+}
