@@ -1,5 +1,7 @@
 Mobbynet::Application.routes.draw do
 
+  get "cities/index"
+
 #  get "omniauth_callbacks/facebook"
 
   resources :events do
