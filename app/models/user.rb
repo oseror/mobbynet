@@ -14,6 +14,7 @@ class User < ActiveRecord::Base
     :styles => { :medium => "300x300>", :thumb => "100x100>" }
 
   has_many :events
+  has_many :messages
   devise :omniauthable, :omniauth_providers => [:facebook]
 
   protected

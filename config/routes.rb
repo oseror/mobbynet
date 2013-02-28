@@ -14,7 +14,7 @@ Mobbynet::Application.routes.draw do
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   resources :users do
     collection do
-      post 'create_event'
+      post 'create_event', 'create_message'
       get 'new_event'
     end
   end
