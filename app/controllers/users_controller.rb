@@ -33,4 +33,23 @@ class UsersController < ApplicationController
   def destroy
     redirect_to destroy_user_session_path, :method => 'DELETE'
   end
+
+  def image_update
+    @user=User.find(current_user)
+    @user.update_attributes(:params[:avatar])
+    redirect_to user_path(current_user)
+  end
+
+  def new_event
+  @event=Event.new
+  end
+  def create_event
+    p"========================"
+    p params
+    @user=User.find(current_user)
+    @event =@user.events.build(params[:event])
+    @event.save
+
+    redirect_to '/'
+  end
 end

@@ -80,4 +80,9 @@ class EventsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def user_events
+    @user= User.find(current_user)
+    @all_events=@user.events
+  end
 end

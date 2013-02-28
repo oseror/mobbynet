@@ -54,9 +54,7 @@ GEM
       multi_json (~> 1.0)
     faraday (0.8.5)
       multipart-post (~> 1.1)
-
     galetahub-simple_captcha (0.1.3)
-
     hashie (1.2.0)
     heroku (2.35.0)
       heroku-api (~> 0.3.7)
@@ -174,9 +172,7 @@ DEPENDENCIES
   heroku
   jquery-rails
   mysql2 (> 0.3)
-
   oauth2
-
   omniauth
   omniauth-facebook
   paperclip (~> 2.5.0)

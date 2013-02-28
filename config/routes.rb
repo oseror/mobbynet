@@ -12,7 +12,13 @@ Mobbynet::Application.routes.draw do
   get 'place' =>"users#place"
   devise_for :users
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
-  resources :users
+  resources :users do
+    collection do
+      post 'create_event'
+      get 'new_event'
+    end
+  end
   get 'registration' => "home#registration"
+  put 'image_update' =>'users#image_update'
   root :to => 'home#index'
 end

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  type: 
+  start_time: MyString
+  end_time: MyString
+  host: MyString
+  location: MyString
+  category_id: 1
+  comments: MyString
+  avatar_file_name: MyString
+  avatar_content_type: MyString
+  avatar_file_size: 1
+
+two:
+  name: MyString
+  description: MyText
+  type: 
+  start_time: MyString
+  end_time: MyString
+  host: MyString
+  location: MyString
+  category_id: 1
+  comments: MyString
+  avatar_file_name: MyString
+  avatar_content_type: MyString
+  avatar_file_size: 1
