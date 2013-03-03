@@ -1,4 +1,8 @@
-<h1>Listing events</h1>
+
+<%= stylesheet_link_tag 'gmaps4rails' %>
+<%= yield :scripts %>
+<%= javascript_include_tag "gmaps4rails/googlemaps" %>
+<!<h1>Listing events</h1>
 
 <table>
   <tr>
@@ -9,11 +13,7 @@
     <th>End time</th>
     <th>Host</th>
     <th>Location</th>
-    <th>Category</th>
-    <th>Comments</th>
-    <th>Avatar file name</th>
-    <th>Avatar content type</th>
-    <th>Avatar file size</th>
+    <th>Category</th> 
     <th></th>
     <th></th>
     <th></th>
@@ -29,10 +29,7 @@
     <td><%= event.host %></td>
     <td><%= event.location %></td>
     <td><%= event.category_id %></td>
-    <td><%= event.comments %></td>
-    <td><%= event.avatar_file_name %></td>
-    <td><%= event.avatar_content_type %></td>
-    <td><%= event.avatar_file_size %></td>
+
     <td><%= link_to 'Show', event %></td>
     <td><%= link_to 'Edit', edit_event_path(event) %></td>
     <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -43,3 +40,5 @@
 <br />
 
 <%= link_to 'New Event', new_event_path %>
+
+<%= gmaps4rails(@json) %>

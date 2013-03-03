@@ -10,7 +10,7 @@ Mobbynet::Application.routes.draw do
 
 
   get 'place' =>"users#place"
-  devise_for :users
+#  devise_for :users
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   resources :users do
     collection do

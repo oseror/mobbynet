@@ -13,14 +13,17 @@ class UsersController < ApplicationController
 
   def show
     @user=User.find(current_user)
+    @messages=User.find(current_user).messages
   end
 
   def update
     @user=User.find(current_user)
     if @user.update_attributes(params[:user])
       flash[:notice]="Successfully updated"
-      redirect_to edit_user_path(current_user)
+      redirect_to edit_user_path(current_user.id)
     else
+      flash[:error]="Successfully has not updated"
+      redirect_to edit_user_path(current_user.id)
     end
   end
 
@@ -54,6 +57,12 @@ class UsersController < ApplicationController
   end
 
   def create_message
-
+    p"=========================================="
+ p params
+@message=current_user.messages.build(params[:message])
+if @message.save
+  redirect_to user_path(current_user), notice: 'Event was successfully created.'
+else
+end
   end
 end
