@@ -1,5 +1,166 @@
+
+<!--<div style="clear: both;"></div>
+<div id="sign_up_page">
+  <h2>Sign up</h2>
+
+  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+
+    <div><%= f.label :username %>
+      <%= f.text_field :username, :autofocus => true %></div>
+
+    <div><%= f.label :email %>
+      <%= f.email_field :email, :autofocus => true %></div>
+
+    <div><%= f.label :age %>
+      <%= f.text_field :age %></div>
+
+    <div><%= f.label :gender %>
+      <%= f.text_field :sex %></div>
+
+    <div><%= f.label :base_location %>
+      <%= f.text_field :base_location %></div>
+
+    <div><%= f.label :password %>
+      <%= f.password_field :password %></div>
+
+    <div><%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation %></div>
+
+    <div><%= f.submit "Sign up" %></div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+
+</div>
+<div style="clear: both;"></div>
+-->
+
+<section id="serchber">
+        <section class="serber-wapper">
+      <section class="regester-img" style="float:left; margin-left: 400px;"><img src="/assets/sign-up.png" alt="" /></section>
+
+        </section>
+   <!-- serchber-->    </section>
+
+
+            <section id="regesterbody">
+            <section id="body-wapper">
+
+
+
+            <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name),:html =>{:class=>'regester-form'}) do |f| %>
+    <%= devise_error_messages! %>
+              <p><%= f.text_field :username, :autofocus => true,:Placeholder=>"Real Name", :class=>"text-are-for-re" %></p>
+
+              <p><%= f.email_field :email, :autofocus => true,:Placeholder=>"Email", :class=>"text-are-for-re" %></p>
+              <p><%= f.text_field :age,:Placeholder=>"Age", :class=>"text-are-for-re" %></p>
+              <!--<p><%= f.text_field :sex,:Placeholder=>"Gender", :class=>"text-are-for-re" %></p>-->
+              <p><%= f.text_field :base_location,:Placeholder=>"Location", :class=>"text-are-for-re" %></p>
+              <p><%= f.password_field :password,:Placeholder=>"Password", :class=>"text-are-for-re" %></p>
+              <p><%= f.password_field :password_confirmation,:Placeholder=>"Re Enter Password", :class=>"text-are-for-re" %></p>
+   
+              <p class="birth-day">Birthday:</p>
+                <p class="birthday">
+                  <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)" class="date">
+                    <option>Month</option>
+                    <option>1 </option>
+                    <option> 2</option>
+                    <option >3</option>
+                    <option >4</option>
+                    <option >5</option>
+                    <option >6</option>
+                    <option >7</option>
+                    <option >8</option>
+                    <option >9</option>
+                    <option>10 </option>
+                    <option >11</option>
+                    <option>12 </option>
+                  </select>
+
+                  <select name="jumpMenu2" id="jumpMenu2" onchange="MM_jumpMenu('parent',this,0)" class="date">
+                    <option>Date</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                    <option>item1</option>
+                  </select>
+
+
+
+                  <select name="jumpMenu3" id="jumpMenu3" onchange="MM_jumpMenu('parent',this,0)" class="date">
+                    <option>year</option>
+                    <option>1985</option>
+                    <option>1986</option>
+                    <option>1987</option>
+                    <option>1988</option>
+                    <option>1989</option>
+                    <option>1990</option>
+                    <option>1991</option>
+                    <option>1992</option>
+                    <option>1993</option>
+                    <option>1994</option>
+                    <option>1995</option>
+                    <option>1996</option>
+                    <option>1997</option>
+                    <option>1989</option>
+                    <option>1999</option>
+                    <option>2000</option>
+                  </select>
+              </p>
+              <P class="male-fe">Male <input name="" type="radio" value="Male" /> female <input name="" type="radio" value="Female" /></P>
+                
+
+
+
+               <p><%= f.submit "Sign Up now",:class=>"signup-btn" %><%= link_to image_tag("facebook-signup.jpg", :size=>"150x50",:style=>"padding-top:10px;"), user_omniauth_authorize_path(:facebook) %>
+              </p>
+
+   
+
+
+
+           <% end %>
+
+
+            </section>
+
+
+
+
+            </section>
+
 <%if params[:user][:user_type]%>
   <%= render "#{params[:user][:user_type]}" %>
 <% else %>
   <%= render "user" %>
 <% end %>
+

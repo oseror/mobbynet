@@ -1,112 +1,127 @@
-0
-	<section class="top-dark">
-    </section>
-<section id="wrapper">
-	<section class="top-d">
-     	<section class="update"> <a href="http://#"> Update your Status </a> </section>
-        <section class="notification">
-        	<section class="notifi-item"> <a href="http://#"> <%= image_tag('user.jpg') %> </a> </section>
-            <section class="notifi-item"> <a href="http://#"> <%= image_tag('chat.jpg') %></a>  </section>
-            <section class="notifi-item"> <a href="http://#"> <%= image_tag('notification.jpg') %> </a> </section>
-        </section>
-     <section class="search1"> <input type="text"/> </section>
-  	  <section class="search1-icon"> <a href="#"><%= image_tag('auto.png') %></a>
-      </section>
-            <section class="notification">
-        	<section class="notifi-item"> <a href="http://#"> <%= image_tag('group.jpg') %> </a> </section>
-            <section class="notifi-item"> <a href="http://#"> <%= image_tag('notes.jpg') %></a>  </section>
-            <section class="notifi-item"> <a href="http://#"> <%= image_tag('gallery.jpg') %></a> </section>
-        </section>
-    </section>
-    <section class="left-panel">
 
-    	<section class="heading-text"> Victoria Ricciano
-        </section>
-        <section class="head-img"> <a href="http://#"><%= image_tag('img1.jpg') %></a>
-        </section>
-        <section class="follow-blue"> <a href="http://#"><%= image_tag('btn-blue.png') %></a>
-        </section>
-        <section id="navi3">
- 				     <ul>
-    				    <li onclick="$('#profile-sub').toggle();"> <a href="">My profile </a></li>
-                                    <ul id="profile-sub"style="list-style: none;padding-left:10px;">
-                  <li><a href="#">Creat cv</a></li>
-                <li><a href="#">Change Account setting</a></li></ul>
-    				    <li> <a href="">My Place</a></li>
-      					<li> <a href="">My People  </a></li>
-     				   <li onclick="$('#event-list').toggle();"> <a href="#">My Events</a></li>
-                                   <ul id="event-list" style="list-style: none;padding-left:10px;display:none;">
-                    <li><a href="#">Creat Events</a></li>
-                <li><a href="<%= user_events_events_path(current_user)%>">View Events</a></li>
-                <li><a href="#">Delate Events</a></li></ul>
-     				   <li> <a href="">My Deals</a></li>
-     				 </ul>
-  		</section>
-      <section id="navi3">
-       <section class="bottom-navi">
-        	<section class="btm-icon1"> <a href="#"><%= image_tag('iew.png') %></a> </section> <section class="btm-text"> <a href="#"> View Profile </a> </section>
+<div class="top-dark" style="background:#333">
+</div>
+<div id="wrapper">
+  <div class="top-d">
+    <div class="update"> <a href="http://#"> Update your Status </a> </div>
+    <div class="notification">
+      <div class="notifi-item"> <a href="http://#"> <%= image_tag('user.jpg') %> </a> </div>
+      <div class="notifi-item"> <a href="http://#"> <%= image_tag('chat.jpg') %></a>  </div>
+      <div class="notifi-item"> <a href="http://#"> <%= image_tag('notification.jpg') %> </a> </div>
+    </div>
+    <div class="search1" style="background:#fff"> <input type="text"/> </div>
+    <div class="search1-icon"> <a href="#"><%= image_tag('auto.png') %></a>
+    </div>
+    <div class="notification">
+      <div class="notifi-item"> <a href="http://#"> <%= image_tag('group.jpg') %> </a> </div>
+      <div class="notifi-item"> <a href="http://#"> <%= image_tag('notes.jpg') %></a>  </div>
+      <div class="notifi-item"> <a href="http://#"> <%= image_tag('gallery.jpg') %></a> </div>
+    </div>
+  </div>
+  <div class="left-panel" style="height:100%">
 
-        </section>
-       <section class="bottom-navi1">
-        	<section class="btm-icon1"> <a href="#"><%= image_tag('invite.png') %></a> </section> <section class="btm-text">  <a href="#"> Invite Friends </a> </section>
-        </section>
-       <section class="bottom-navi1">
-        	<section class="btm-icon1"> <a href="#"><%= image_tag('find.png') %></a> </section> <section class="btm-text">  <a href="#">Find Friends</a></section>
-        </section>
-      </section>
+    <div class="heading-text"> Victoria Ricciano
+    </div>
+    <div class="head-img"> <a href="http://#"><%= image_tag("img1.jpg") %></a>
 
-    </section>
-<section class="middle-area">
-    	<section class="mid-top">
-        	<section class="mid-text"> <input type="text" /> </section>
-        </section>
-               <section class="buttons">
-        	<section class="btn-mid">  <a href="#">Activity </a> </section>
-            <section class="btn-mid1"> <a href="#">Follows (6)</a></section>
-            <section class="btn-mid2"> <a href="#">Followers (6)</a></section>
-        </section>
-        <section class="content-mid">
-        	<section class="content-img"> <a href="#"><%= image_tag('icon-img.png') %></a>
-            </section>
-            <section class="content-text">  Lorem lpsum is simply dummy
-            </section>
-        	<section class="like-btn">
-            	<section class="like-text"> <a href=""> Like </a> </section>
-                <section class="like-text"> <a href="#"> Comment </a> </section>
-                <section class="like-text"> <a href="#"> Delete </a> </section>
-            </section>
-        </section>
-         <section class="content-mid">
-        	<section class="content-img"> <%= image_tag('icon-img.png') %>
-            </section>
-            <section class="content-text">  Lorem lpsum is simply dummy
-            </section>
-        	<section class="like-btn">
-            	<section class="like-text"> <a href="#"> Like </a> </section>
-                <section class="like-text"> <a href="#"> Comment </a> </section>
-                <section class="like-text"> <a href="#"> Delete </a> </section>
-            </section>
-        </section>
-                 <section class="content-mid">
-        	<section class="content-img"> <a href="#"><%= image_tag('icon-img.png') %></a>
-            </section>
-            <section class="content-text">  Lorem lpsum is simply dummy
-            </section>
-        	<section class="like-btn">
-            	<section class="like-text"> <a href="l#"> Like </a> </section>
-                <section class="like-text"> <a href=""> Comment </a> </section>
-                <section class="like-text"> <a href="#"> Delete </a> </section>
-            </section>
-        </section>
-</section>
-<section id="right-panel">
-    	<section class="right-head"> Profile Completeness
-        </section>
-        <section class="profile-bar"> <a href="#"><%= image_tag('bar.jpg') %></a>
-        </section>
-        <section class="profile-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard .
-        </section>
-        <section class="profile-btn"> <a href="#"> <%= image_tag('complete.jpg') %> </a>
-        </section>
- </section>
+    </div>
+    <% @user = current_user %>
+    <%= form_for(:avatar,  :url => image_update_path(current_user), :html => { :method => :put }) do |f| %>
+      <a href="http://#"><%= f.file_field :avatar, :size=>'20px;' %></a>
+      <%= f.submit %>
+    <% end %>
+    <div class="follow-blue"> <a href="http://#"><%= image_tag('btn-blue.png') %></a>
+    </div>
+    <div id="navi3"style="height:100%;float:none;">
+      <ul style="height:auto;float:none;">
+        <li onclick="$('#profile-sub').toggle();"> <a href="">My profile </a></li>
+        <ul id="profile-sub"style="list-style: none;padding-left:10px;">
+          <li><a href="#">Creat cv</a></li>
+          <li><a href="<%= edit_user_path(current_user) %>">Change Account setting</a></li></ul>
+        <li> <a href="">My Place</a></li>
+        <li> <a href="">My People  </a></li>
+        <li onclick="$('#event-list').toggle();"> <a href="#">My Events</a></li>
+        <ul id="event-list" style="list-style: none;padding-left:10px;display:none;">
+          <li><a href="<%= new_event_users_path %>">Create Events</a></li>
+          <li><a href="<%= user_events_events_path(current_user)%>">View Events</a></li>
+          <li><a href="#">Delate Events</a></li>
+        </ul>
+        <li> <a href="">My Deals</a></li>
+      </ul>
+    </div>
 
+
+    <div class="bottom-navi">
+      <div class="btm-icon1"> <a href="#"><%= image_tag('iew.png') %></a> </div> <div class="btm-text"> <a href="#"> View Profile </a> </div>
+
+    </div>
+    <div class="bottom-navi1">
+      <div class="btm-icon1"> <a href="#"><%= image_tag('invite.png') %></a> </div> <div class="btm-text">  <a href="#"> Invite Friends </a> </div>
+    </div>
+    <div class="bottom-navi1">
+      <div class="btm-icon1"> <a href="#"><%= image_tag('find.png') %></a> </div> <div class="btm-text">  <a href="#">Find Friends</a></div>
+    </div>
+  </div>
+
+
+
+  <div class="middle-area">
+    <div class="mid-top">
+      <%= form_for :message, :url => create_message_users_path, :html => { :id =>current_user.id,:method => :post,:remote => true} do |f| %>
+        <div class="mid-text"><%= f.text_area :description, :rows => 1, :id => "txtOutsideComment_#{4}", :class => "new-text" %></div>
+      <% end %>
+      <!--<div class="mid-text"> <input type="text" /> </div>-->
+    </div>
+    <div class="buttons">
+      <div class="btn-mid" style="background-color:#0090C5">  <a href="#">Activity </a> </div>
+      <div class="btn-mid1" style="background-color:#333"> <a href="#">Follows (6)</a></div>
+      <div class="btn-mid2" style="background-color:#333"> <a href="#">Followers (6)</a></div>
+    </div>
+
+    <% for msg in @messages %>
+      <div class="content-mid">
+        <div class="content-img"> <a href="#"><%= image_tag('icon-img.png') %></a>
+        </div>
+        <div class="content-text"> <%= msg.description %>
+        </div>
+        <div class="like-btn">
+          <div class="like-text"> <a href=""> Like </a> </div>
+          <div class="like-text"> <a href="#"> Comment </a> </div>
+          <div class="like-text"> <a href="#"> Delete </a> </div>
+        </div>
+      </div>
+    <% end %>
+
+    <!--<div class="content-mid">
+      <div class="content-img"> <a href="#"><%= image_tag('icon-img.png') %></a>
+      </div>
+      <div class="content-text">  Lorem lpsum is simply dummy
+      </div>
+      <div class="like-btn">
+        <div class="like-text"> <a href="l#"> Like </a> </div>
+        <div class="like-text"> <a href=""> Comment </a> </div>
+        <div class="like-text"> <a href="#"> Delete </a> </div>
+      </div>
+    </div>-->
+  </div>
+  <div id="right-panel">
+    <div class="right-head"> Profile Completeness
+    </div>
+    <div class="profile-bar"> <a href="#"><%= image_tag('bar.jpg') %></a>
+    </div>
+    <div class="profile-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard .
+    </div>
+    <div class="profile-btn"> <a href="#"> <%= image_tag('complete.jpg') %> </a>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  jQuery('.new-text').keypress(function(e) {
+  if (e.keyCode == 13 && !e.shiftKey) {
+  //alert("hi");
+  e.preventDefault();
+  this.form.submit();
+  }
+  });
+
+</script>

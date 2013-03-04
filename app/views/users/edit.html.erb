@@ -1,84 +1,78 @@
 
-<div id="wapper">
+	<section class="top-dark">
+    </section>
+<section id="wrapper">
+	<section class="top-d">
+     	<section class="update"> <a href="http://#"> Update your Status </a> </section>
+        <section class="notification">
+        	<section class="notifi-item"> <a href="http://#"> <%= image_tag('user.jpg') %> </a> </section>
+            <section class="notifi-item"> <a href="http://#"> <%= image_tag('chat.jpg') %></a>  </section>
+            <section class="notifi-item"> <a href="http://#"> <%= image_tag('notification.jpg') %> </a> </section>
+        </section>
+     <section class="search1"> <input type="text"/> </section>
+  	  <section class="search1-icon"> <a href="#"><%= image_tag('auto.png') %></a>
+      </section>
+            <section class="notification">
+        	<section class="notifi-item"> <a href="http://#"> <%= image_tag('group.jpg') %> </a> </section>
+            <section class="notifi-item"> <a href="http://#"> <%= image_tag('notes.jpg') %></a>  </section>
+            <section class="notifi-item"> <a href="http://#"> <%= image_tag('gallery.jpg') %></a> </section>
+        </section>
+    </section>
+    <section class="left-panel">
 
-        <div id="serchber">
-
-        <div class="serber-wapper">
-        <div class="updatest-bg">
-
-        <p class="upader-text"><a href="#">Update your Status</a></p>
-        </div>
-        <div class="notifi-icon"><a href="#"><%= image_tag('user.jpg') %></a></div>
-        <div class="chaticon"><a href="#"><img src="/assets/chat.jpg"  alt="" /></a></div>
-        <div class="informa"><a href="#"><img src="/assets/notification.jpg"  alt="" /></a></div>
-
-        <div class="serch-ber">
-        <input name="" type="text" value="" size=""  class="serch">
-        <div class="serch-icon"><a href="#"><img src="/assets/auto.png"  alt="" /></a></div>
-        </div>
-
- 		<div class="groop-icon"><a href="#"><img src="/assets/group.jpg"  alt="" /></a></div>
-        <div class="note"><a href="#"><img src="/assets/notes.jpg"  alt="" /></a></div>
-        <div class="gallary"><a href="#"><img src="/assets/gallery.jpg"  alt="" /></a></div>
-
-
-        </div>
-
-
-
-
-   <!-- serchber-->    </div>
-        <div id="body">
-   		  <div class="body-left-aside">
-
-
-                <div class="deshbord-bg"><img src="/assets/deshbord-image.png" alt="" /></div>
-                <ul class="deskbord-profile">
-
-                <li><a href="#" onclick="$('#profile-sub').toggle();">My Profile</a></li>
-                <ul id="profile-sub"style="list-style: none;padding-left:10px;">
+    	<section class="heading-text"> Victoria Ricciano
+        </section>
+        <section class="head-img"> <a href="http://#"><%= image_tag('img1.jpg') %></a>
+        </section>
+        <section class="follow-blue"> <a href="http://#"><%= image_tag('btn-blue.png') %></a>
+        </section>
+        <section id="navi3">
+ 				     <ul>
+    				    <li onclick="$('#profile-sub').toggle();"> <a href="">My profile </a></li>
+                                    <ul id="profile-sub"style="list-style: none;padding-left:10px;">
                   <li><a href="#">Creat cv</a></li>
-                <li><a href="#">Change Account setting</a></li></ul>
-                <li><a href="#">My People</a></li>
-                <li><a href="#">My Place</a></li>
-                <li><a href="#" onclick="$('#event-list').toggle();">My Events</a></li>
-                <ul id="event-list" style="list-style: none;padding-left:10px;display:none;">
+                <li><a href="<%= edit_user_path(current_user) %>">Change Account setting</a></li></ul>
+    				    <li> <a href="">My Place</a></li>
+      					<li> <a href="">My People  </a></li>
+     				   <li onclick="$('#event-list').toggle();"> <a href="#">My Events</a></li>
+                                   <ul id="event-list" style="list-style: none;padding-left:10px;display:none;">
                     <li><a href="#">Creat Events</a></li>
-                <li><a href="#">View Events</a></li>
+                <li><a href="<%= user_events_events_path(current_user)%>">View Events</a></li>
                 <li><a href="#">Delate Events</a></li></ul>
-                <li><a href="#">My Deals</a></li>
-                <li><a href="#" onclick="$('#shout-list').toggle();">My Shouts</a></li>
-                <ul id="shout-list" style="list-style: none;padding-left:10px;display:none;">
-                    <li><a href="#">My Shouts</a></li>
-                    <li><a href="#">Creat Shouts</a></li></ul>
-                <li><a href="#">My Shop</a></li>
-                <li><a href="#" onclick="$('#coupan-list').toggle();">My Coupnas</a></li>
-                <ul id="coupan-list" style="list-style: none;padding-left:10px;display:none;"><li><a href="#">View Coupnas</a></li>
-                <li><a href="#">Dlate Coupnas</a></li>
-                <li><a href="#">View Gift Cupons</a></li>
-                <li><a href="#">Vewmassage from gift</a></li>
-                <li><a href="#">Reddem Gift Cuppon</a></li></ul>
-                <li><a href="#">My Reffelas</a></li>
-
-                </ul>
+     				   <li> <a href="">My Deals</a></li>
+     				 </ul>
+  		</section>
 
 
-          <!--leftaside-->      </div>
-                <div class="body-right-aside">
+       <section class="bottom-navi">
+        	<section class="btm-icon1"> <a href="#"><%= image_tag('iew.png') %></a> </section> <section class="btm-text"> <a href="#"> View Profile </a> </section>
 
-                <!--<div class="changeacc-bg"><a href="#">Change Account Settings</a></div>-->
+        </section>
+       <section class="bottom-navi1">
+        	<section class="btm-icon1"> <a href="#"><%= image_tag('invite.png') %></a> </section> <section class="btm-text">  <a href="#"> Invite Friends </a> </section>
+        </section>
+       <section class="bottom-navi1">
+        	<section class="btm-icon1"> <a href="#"><%= image_tag('find.png') %></a> </section> <section class="btm-text">  <a href="#">Find Friends</a></section>
+        </section>
+      </section>
 
-                <%= form_for(@user,  :url => user_path(current_user), :html => { :method => :put, :class=>"Form" }) do |f| %>
+
+
+<section class="middle-area" style="width:600px;margin-top:15px;">
+    	<!--<section class="mid-top">
+        	<section class="mid-text"> <input type="text" /> </section>
+        </section>-->
+               <%= form_for(@user,  :url => user_path(current_user), :html => { :method => :put, :class=>"Form" }) do |f| %>
 
                 <p>Email Address:
                  <%= current_user.email %>
                 </p>
- 
+
                 <!--<p>Email Setting :*<input name="" type="button" value="Email Setting"  class="email"/></p>-->
                 <p>Password :***<input name="" type="button" value=" Change Password"  class="email" /></p>
 
                 <p>Real name:***
-                 <%= f.text_field :real_name, :class=>"text-area" %>
+                 <%= f.text_field :real_name, :class=>"text-area", :style=>"border:1px solid black" %>
                 </p>
 
                 <p>Age:***
@@ -221,15 +215,7 @@
                        </p>
 
                 <% end %>
-
-
-
-        </div>
-
-
-        </div>
-
-<!--wapper--></div>
+</section>
 
 
 

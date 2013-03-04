@@ -3,7 +3,6 @@
   <head>
     <title> Mobbynet </title>
     <%= stylesheet_link_tag "application", :media => "all" %>
-
     <%= javascript_include_tag "application", :media => "all" %>
     
     <script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/document_iterator.js"></script>
@@ -25,15 +24,20 @@
     <meta name="string_finder.js">
     <meta name="change_sink.js">
     <%= csrf_meta_tags %>
+    <%= yield :head %>
   </head>
   <body>
   <section id="mainwapper">
     <%= render "shared/header" %>
+    <%= flash[:notice] %>
+    <p style="color:red"><%= flash[:error] %></p>
     <div style="clear:both;"></div>
     <div id="main_container">
       <%= yield %>
+      <%= yield :scripts %>
     </div>
     <%= render "shared/footer" %>
   </section>
+  <%= yield :scripts %>
 </body>
 </html>

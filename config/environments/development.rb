@@ -36,5 +36,6 @@ Mobbynet::Application.configure do
   #config.assets.debug = true
   config.assets.debug = false
   config.assets.compile = true
+  Paperclip.options[:command_path] = "/usr/bin"
   config.serve_static_assets = false
 end

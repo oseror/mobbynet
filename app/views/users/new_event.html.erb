@@ -62,36 +62,51 @@
     	<!--<div class="mid-top">
         	<div class="mid-text"> <input type="text" /> </div>
         </div>-->
-               <%#= form_for(@event,  :url => create_event_users_path(current_user), :html => { :method => :post}) do |f| %>
-<% @all_events.each do |event| %>
+               <%= form_for(@event,  :url => create_event_users_path(current_user), :html => { :method => :post}) do |f| %>
+
                 <div class="field">
-    Event Name
-    <%= event.name %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%#= f.label :description %>
-    <%= event.description %>
+    <%= f.label :description %>
+    <%= f.text_area :description,:rows=>'7',:cols=>'30' %>
   </div>
   <div class="field">
-    <%#= f.label :type %>
-    <%#= f..type %>
+    <%= f.label :type %>
+    <%= f.text_field :type %>
   </div>
   <div class="field">
-    <%#= f.label :start_time %>
-    <%= event.start_time %>
+    <%= f.label :start_time %>
+    <%= f.text_field :start_time %>
   </div>
   <div class="field">
-    <%#= f.lab/el :end_time %>
-    <%= event.end_time %>
+    <%= f.label :end_time %>
+    <%= f.text_field :end_time %>
   </div>
-  
   <div class="field">
-    <%#= f.label :image %>
-    <%= image_tag(event.avatar) %>
+    <%= f.label :host %>
+    <%= f.text_field :host %>
+  </div>
+  <div class="field">
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :category_id %>
+    <%= f.number_field :category_id %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %>
+    <%= f.text_field :comments %>
+  </div>
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :avatar %>
 
   </div>
   <div class="actions">
-    <%#= f.submit %>
+    <%= f.submit %>
   </div>
                      <p>
 <%#= submit_tag "Save Account",:class=>"save-btn" %>
